@@ -42,6 +42,28 @@ mkdir hubot-c3po-config
 cd hubot-c3po-config
 vi Dockerfile
 ```
+This Dockerfile is not in github. It looked like this (scrubbed API keys).
+```
+# DOCKER-VERSION 1.11.1
+
+FROM aaron8bit/hubot-c3po
+MAINTAINER Aaron Albert, aalbert@pillartechnology.com
+
+ENV HUBOT_PORT 8080
+ENV HUBOT_ADAPTER slack
+ENV HUBOT_NAME c3po
+ENV HUBOT_GOOGLE_API_KEY <your google key>
+ENV HUBOT_SLACK_TOKEN <your slack key>
+ENV HUBOT_SLACK_TEAM <your team name>.slack.com
+ENV HUBOT_SLACK_BOTNAME ${HUBOT_NAME}
+ENV PORT ${HUBOT_PORT}
+
+EXPOSE ${HUBOT_PORT}
+
+WORKDIR /opt/bot
+
+CMD bin/hubot
+```
 
 ### Built it, run it
 ```
