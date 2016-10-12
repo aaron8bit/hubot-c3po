@@ -1,8 +1,5 @@
 # Aaron's Notes on Making This
 
-Getting Started with Hubot
-https://github.com/github/hubot/blob/7562e245eb5fe229fc861bfe870c6117ae36093f/docs/README.md
-
 ### Install nvm
 
 I installed nvm on ubuntu using this install script (0.32.0 was latest at the time).
@@ -54,4 +51,21 @@ docker run -d -p 45678:8080 aaronbit/hubot-c3po:live
 
 ### Invite the bot to a slack channel
 
+### Some notes on where I found infomration (other than google)### Some notes on where I found infomration (other than google)### Some notes on where I found infomration (other than google)
+
+Make a New Bot User
+https://api.slack.com/bot-users
+https://aaron8bit.slack.com/apps/new/A0F7YS25R-bots
+
+Getting Started with Hubot
+https://github.com/github/hubot/blob/7562e245eb5fe229fc861bfe870c6117ae36093f/docs/README.md
+
+Dockerized Slack-integrated Hubot
+http://nathanielhoag.com/blog/2014/12/07/a-dockerized-slack-integrated-hubot/
+
+Google API Key
+https://developers.google.com/maps/documentation/javascript/get-api-key
+
+Google Image Search CSE
+https://github.com/hubot-scripts/hubot-google-images#cse-setup-details
 
